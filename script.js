@@ -20,7 +20,7 @@ function power(num1,num2){
 
 function operate(operatorName,num1,num2){
     switch(operatorName){
-        
+
         case "add":
             add(num1,num2);
         break;
