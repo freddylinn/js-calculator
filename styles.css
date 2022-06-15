@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "calculator";
+    src: url("./fonts/calculator.ttf");
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -29,10 +34,20 @@ button {
 }
 
 .display {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     width: 466px;
     height: 90px;
     margin: 10px 0;
     background: #a9d183;
+    font-family: "calculator", sans-serif;
+    font-size: 86px;
+    text-align: right;
+}
+
+.currNumber {
+    margin-bottom: 10px;
 }
 
 .buttons {
