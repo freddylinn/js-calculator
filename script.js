@@ -39,3 +39,19 @@ function operate(operatorName,num1,num2){
 
     }
 }
+
+
+const displayElement = document.querySelector(".currNumber");
+const numberButtons = document.querySelectorAll(".number");
+
+for(const button of numberButtons){
+    button.addEventListener("click", function(e){
+        if(displayElement.textContent.length < 12)
+        displayElement.textContent += e.target.textContent;
+    });
+}
+
+
+const clearButton = document.querySelector("#clear");
+clearButton.addEventListener("click", () => displayElement.textContent = "");
+
