@@ -7,11 +7,11 @@ function subtract(num1, num2){
 }
 
 function multiply(num1, num2){
-    return num1 * num2;
+    return Number((num1 * num2).toFixed(3));
 }
 
 function divide(num1,num2){
-    return num1 / num2;
+    return Number((num1 / num2).toFixed(3));
 }
 
 function power(num1,num2){
