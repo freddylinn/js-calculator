@@ -66,6 +66,10 @@ button {
     background: #73b86a;
 }
 
+.operatorSelected {
+    background: #73b86a;
+}
+
 .number {
     background: #ebebeb;
 }

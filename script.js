@@ -61,6 +61,7 @@ function calculateAns(){
     }
     displayElement.textContent = operate(currOperator,firstNumber,secondNumber);
     secondStage = false;
+    currOperator = "";
 }
 
 
@@ -93,7 +94,7 @@ const operatorButtons = document.querySelectorAll(".operator");
 
 for(const button of operatorButtons){
     button.addEventListener("click", (e) => {
-        if(!secondStage){
+        if(!secondStage && currOperator == ""){
             if(displayElement.textContent.length >= 1){
 
                 currOperator = e.target.textContent;
@@ -110,7 +111,7 @@ for(const button of operatorButtons){
 
             }
         }
-        else{
+        else if(currOperator == e.target.textContent){
             calculateAns();
         }
     });
